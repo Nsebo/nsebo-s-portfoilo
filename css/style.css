@@ -166,7 +166,7 @@ strong {
 }
 
 .btn button {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   color: #5c4d4d;
 }
@@ -182,11 +182,31 @@ strong {
   animation: bounce-in-left 1.1s both;
 }
 
+.click {
+  font-size: 1.5rem;
+  background-color: #5b5c4d;
+}
+
+.click a {
+  color: #fff;
+}
+
 @media (max-width: 500px) {
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+    padding-top: 2rem;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
   .mobile {
     position: absolute;
     top: 5rem;
     left: 0;
+    z-index: 1000;
   }
 
   .close__open {
@@ -196,7 +216,7 @@ strong {
   .mobile ul {
     flex-direction: column;
     text-align: center;
-    background-color: #5c4d4d;
+    background-color: #837d7d;
     width: 100vw;
     height: 100vh;
     padding-top: 10rem;
@@ -227,6 +247,16 @@ strong {
 
   .desktop {
     display: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .email,
+  .social,
+  .copyright {
+    margin-top: 0.6rem;
   }
 }
 
@@ -338,7 +368,7 @@ label {
 .project-1,
 .project-2,
 .project-3 {
-  height: 25rem;
+  height: 30rem;
   width: 20rem;
   background: white;
   margin: 2rem;
@@ -355,16 +385,13 @@ label {
   transform: translateY(-30px);
 }
 
-.project-1 img {
+.project-1 img,
+.project-2 img,
+.project-3 img {
   padding: 1rem;
   width: 12rem;
-  height: 10rem;
+  height: 15rem;
   margin-top: 1.5rem;
-}
-
-.project-3 img {
-  width: 12rem;
-  height: 11.3rem;
 }
 
 .project-des p {
